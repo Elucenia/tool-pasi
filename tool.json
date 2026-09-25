@@ -1,0 +1,447 @@
+{
+  "tool": {
+    "id": "pasi",
+    "title": "PASI (Psoriasis Area and Severity Index)",
+    "short": "Gravidade da psoríase e resposta ao tratamento",
+    "desc": "Calcule o PASI da psoríase em placas por região (eritema, infiltração, descamação e área) e a resposta PASI 50, 75 ou 90 ao tratamento.",
+    "lead": "Mede a gravidade da psoríase em placas somando intensidade e extensão das lesões em quatro regiões do corpo; também calcula a resposta ao tratamento.",
+    "spec": [
+      "dermatologia",
+      "reumatologia"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "e_h",
+        "Cabeça e pescoço: eritema",
+        "radio",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        }
+      ],
+      [
+        "i_h",
+        "Cabeça e pescoço: infiltração (espessura)",
+        "radio",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        }
+      ],
+      [
+        "d_h",
+        "Cabeça e pescoço: descamação",
+        "radio",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        }
+      ],
+      [
+        "a_h",
+        "Cabeça e pescoço: área acometida da região",
+        "sel",
+        {
+          "opts": {
+            "0": "0 · sem lesão",
+            "1": "1 · menos de 10%",
+            "2": "2 · 10 a 29%",
+            "3": "3 · 30 a 49%",
+            "4": "4 · 50 a 69%",
+            "5": "5 · 70 a 89%",
+            "6": "6 · 90 a 100%"
+          }
+        }
+      ],
+      [
+        "e_s",
+        "Membros superiores: eritema",
+        "radio",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        }
+      ],
+      [
+        "i_s",
+        "Membros superiores: infiltração (espessura)",
+        "radio",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        }
+      ],
+      [
+        "d_s",
+        "Membros superiores: descamação",
+        "radio",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        }
+      ],
+      [
+        "a_s",
+        "Membros superiores: área acometida da região",
+        "sel",
+        {
+          "opts": {
+            "0": "0 · sem lesão",
+            "1": "1 · menos de 10%",
+            "2": "2 · 10 a 29%",
+            "3": "3 · 30 a 49%",
+            "4": "4 · 50 a 69%",
+            "5": "5 · 70 a 89%",
+            "6": "6 · 90 a 100%"
+          }
+        }
+      ],
+      [
+        "e_t",
+        "Tronco: eritema",
+        "radio",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        }
+      ],
+      [
+        "i_t",
+        "Tronco: infiltração (espessura)",
+        "radio",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        }
+      ],
+      [
+        "d_t",
+        "Tronco: descamação",
+        "radio",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        }
+      ],
+      [
+        "a_t",
+        "Tronco: área acometida da região",
+        "sel",
+        {
+          "opts": {
+            "0": "0 · sem lesão",
+            "1": "1 · menos de 10%",
+            "2": "2 · 10 a 29%",
+            "3": "3 · 30 a 49%",
+            "4": "4 · 50 a 69%",
+            "5": "5 · 70 a 89%",
+            "6": "6 · 90 a 100%"
+          }
+        }
+      ],
+      [
+        "e_i",
+        "Membros inferiores: eritema",
+        "radio",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        }
+      ],
+      [
+        "i_i",
+        "Membros inferiores: infiltração (espessura)",
+        "radio",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        }
+      ],
+      [
+        "d_i",
+        "Membros inferiores: descamação",
+        "radio",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        }
+      ],
+      [
+        "a_i",
+        "Membros inferiores: área acometida da região",
+        "sel",
+        {
+          "opts": {
+            "0": "0 · sem lesão",
+            "1": "1 · menos de 10%",
+            "2": "2 · 10 a 29%",
+            "3": "3 · 30 a 49%",
+            "4": "4 · 50 a 69%",
+            "5": "5 · 70 a 89%",
+            "6": "6 · 90 a 100%"
+          }
+        }
+      ],
+      [
+        "basal",
+        "PASI basal (antes do tratamento), para calcular a resposta",
+        "num",
+        {
+          "min": 0.1,
+          "max": 72,
+          "step": 0.1,
+          "ph": "18",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p>Em cada região: (eritema + infiltração + descamação, cada um de 0 a 4) × área (0 a 6) × peso da região. Pesos: cabeça 0,1; membros superiores 0,2; tronco 0,3; membros inferiores 0,4. PASI = soma das quatro regiões (0 a 72).</p><p>Área: 0 = nenhuma; 1 = &lt; 10%; 2 = 10 a 29%; 3 = 30 a 49%; 4 = 50 a 69%; 5 = 70 a 89%; 6 = 90 a 100% da região.</p>",
+    "table": [
+      [
+        "PASI",
+        "Interpretação"
+      ],
+      [
+        "0",
+        "Sem lesões"
+      ],
+      [
+        "≤ 10",
+        "Leve (avaliar também BSA e qualidade de vida)"
+      ],
+      [
+        "&gt; 10",
+        "Moderada a grave (regra dos dez)"
+      ],
+      [
+        "Melhora ≥ 75%",
+        "PASI 75: resposta usada em ensaios clínicos"
+      ],
+      [
+        "Melhora ≥ 90%",
+        "PASI 90: meta atual com imunobiológicos"
+      ]
+    ],
+    "tips": [
+      "A <strong>área</strong> é a porcentagem da própria região, não do corpo: 50% do tronco vale 4, mesmo que seja cerca de 15% da superfície corporal.",
+      "Pela regra dos dez (Finlay), PASI &gt; 10, superfície corporal &gt; 10% ou grande impacto na qualidade de vida caracterizam psoríase grave, candidata a terapia sistêmica.",
+      "O PASI subestima psoríase em áreas especiais (face, couro cabeludo, unhas, genitais, palmas e plantas), que também justificam tratamento sistêmico.",
+      "Não serve para psoríase pustulosa ou eritrodérmica.",
+      "Para registrar resposta, informe o PASI basal: a calculadora mostra a porcentagem de melhora."
+    ],
+    "sources": [
+      [
+        "Fredriksson T, Pettersson U. Severe psoriasis: oral therapy with a new retinoid. Dermatologica, 1978.",
+        "https://doi.org/10.1159/000250839"
+      ],
+      [
+        "Finlay AY. Current severe psoriasis and the rule of tens. Br J Dermatol, 2005.",
+        "https://doi.org/10.1111/j.1365-2133.2005.06502.x"
+      ]
+    ],
+    "cases": [
+      [
+        "Cabeça (2+2+1, área 2) = 1,0 + tronco (3+2+2, área 3) = 6,3: PASI 7,3",
+        {
+          "e_h": "2",
+          "i_h": "2",
+          "d_h": "1",
+          "a_h": "2",
+          "e_t": "3",
+          "i_t": "2",
+          "d_t": "2",
+          "a_t": "3",
+          "e_s": "0",
+          "i_s": "0",
+          "d_s": "0",
+          "a_s": "0",
+          "e_i": "0",
+          "i_i": "0",
+          "d_i": "0",
+          "a_i": "0"
+        },
+        {
+          "raw": {
+            "pasi": 7.3
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Todas as regiões 3+3+3 com área 4: 9 × 4 × 1,0 = 36",
+        {
+          "e_h": "3",
+          "i_h": "3",
+          "d_h": "3",
+          "a_h": "4",
+          "e_s": "3",
+          "i_s": "3",
+          "d_s": "3",
+          "a_s": "4",
+          "e_t": "3",
+          "i_t": "3",
+          "d_t": "3",
+          "a_t": "4",
+          "e_i": "3",
+          "i_i": "3",
+          "d_i": "3",
+          "a_i": "4"
+        },
+        {
+          "raw": {
+            "pasi": 36
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "PASI 7,3 com basal 36: melhora de 79,7% (PASI 75)",
+        {
+          "e_h": "2",
+          "i_h": "2",
+          "d_h": "1",
+          "a_h": "2",
+          "e_t": "3",
+          "i_t": "2",
+          "d_t": "2",
+          "a_t": "3",
+          "e_s": "0",
+          "i_s": "0",
+          "d_s": "0",
+          "a_s": "0",
+          "e_i": "0",
+          "i_i": "0",
+          "d_i": "0",
+          "a_i": "0",
+          "basal": 36
+        },
+        {
+          "raw": {
+            "pasi": 7.3,
+            "melhora": 79.72
+          }
+        }
+      ],
+      [
+        "Limite: membros inferiores 3+3+2 com área 3 = 9,6; + membros superiores 1+0+1 área 1 = 0,4: PASI 10,0 (leve)",
+        {
+          "e_i": "3",
+          "i_i": "3",
+          "d_i": "2",
+          "a_i": "3",
+          "e_s": "1",
+          "i_s": "0",
+          "d_s": "1",
+          "a_s": "1",
+          "e_h": "0",
+          "i_h": "0",
+          "d_h": "0",
+          "a_h": "0",
+          "e_t": "0",
+          "i_t": "0",
+          "d_t": "0",
+          "a_t": "0"
+        },
+        {
+          "raw": {
+            "pasi": 10
+          },
+          "level": "low"
+        }
+      ]
+    ],
+    "batch": "cirurgia-sentidos",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cirurgia-sentidos",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cirurgia-sentidos.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cirurgia-sentidos.php",
+    "sha256": "21fc91a9a8187a66496f68c2ac8fbdd20a65ceeea519687c963b857f72640866",
+    "bytes": 89063
+  },
+  "clinicalValidation": "not-performed"
+}
