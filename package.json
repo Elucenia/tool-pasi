@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-pasi",
   "version": "0.1.0",
-  "description": "PASI (Psoriasis Area and Severity Index) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "PASI (Psoriasis Area and Severity Index) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
