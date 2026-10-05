@@ -5,11 +5,11 @@
     "short": "Gravidade da psoríase e resposta ao tratamento",
     "desc": "Calcule o PASI da psoríase em placas por região (eritema, infiltração, descamação e área) e a resposta PASI 50, 75 ou 90 ao tratamento.",
     "lead": "Mede a gravidade da psoríase em placas somando intensidade e extensão das lesões em quatro regiões do corpo; também calcula a resposta ao tratamento.",
+    "kind": "Calculadora",
     "spec": [
       "dermatologia",
       "reumatologia"
     ],
-    "tier": 1,
     "fields": [
       [
         "e_h",
@@ -257,39 +257,6 @@
       ]
     ],
     "formula": "<p>Em cada região: (eritema + infiltração + descamação, cada um de 0 a 4) × área (0 a 6) × peso da região. Pesos: cabeça 0,1; membros superiores 0,2; tronco 0,3; membros inferiores 0,4. PASI = soma das quatro regiões (0 a 72).</p><p>Área: 0 = nenhuma; 1 = &lt; 10%; 2 = 10 a 29%; 3 = 30 a 49%; 4 = 50 a 69%; 5 = 70 a 89%; 6 = 90 a 100% da região.</p>",
-    "table": [
-      [
-        "PASI",
-        "Interpretação"
-      ],
-      [
-        "0",
-        "Sem lesões"
-      ],
-      [
-        "≤ 10",
-        "Leve (avaliar também BSA e qualidade de vida)"
-      ],
-      [
-        "&gt; 10",
-        "Moderada a grave (regra dos dez)"
-      ],
-      [
-        "Melhora ≥ 75%",
-        "PASI 75: resposta usada em ensaios clínicos"
-      ],
-      [
-        "Melhora ≥ 90%",
-        "PASI 90: meta atual com imunobiológicos"
-      ]
-    ],
-    "tips": [
-      "A <strong>área</strong> é a porcentagem da própria região, não do corpo: 50% do tronco vale 4, mesmo que seja cerca de 15% da superfície corporal.",
-      "Pela regra dos dez (Finlay), PASI &gt; 10, superfície corporal &gt; 10% ou grande impacto na qualidade de vida caracterizam psoríase grave, candidata a terapia sistêmica.",
-      "O PASI subestima psoríase em áreas especiais (face, couro cabeludo, unhas, genitais, palmas e plantas), que também justificam tratamento sistêmico.",
-      "Não serve para psoríase pustulosa ou eritrodérmica.",
-      "Para registrar resposta, informe o PASI basal: a calculadora mostra a porcentagem de melhora."
-    ],
     "sources": [
       [
         "Fredriksson T, Pettersson U. Severe psoriasis: oral therapy with a new retinoid. Dermatologica, 1978.",
@@ -411,9 +378,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -422,17 +386,598 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T19:12:58.799Z",
+      "total": 3798,
+      "passed": 3798,
+      "sourceRowCount": 3798,
+      "uniqueApiInputCount": 3798,
+      "sourceContextCount": 3798,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "0b3e4670362fbea6e3d9c5b12ba6a48cdd31a9888b55d8b9d1acb92581d11311",
+        "total": 3798,
+        "bankRowCount": 3798,
+        "uniqueApiInputCount": 3798,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/dermatology-fraction-independent-verify-final27.json",
+            "sha256": "73cb5acaa2de2f11b9506171155e927e69e24507f8436975c69077cbc02673d3"
+          },
+          {
+            "file": "reports/review-20261003/dermatology-three-independent-expectations-final27.json",
+            "sha256": "f510a385c0d3abf34a3df08c449e9c932d2dc5fbc9a9cd1dddf2dddb6ec1af74"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/easi-pasi-total-source-banks-execution-final27.json",
+          "sha256": "f403fd657b53637a6efb5b96c13ef9b8097f25ddf2fd9b991ae222346b89e915"
+        },
+        "packagingRequirement": "Require current PASI engine SHA exact before fresh packaging."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 3798,
+        "uniqueApiInputs": 3798,
+        "duplicateRows": 0
+      },
+      "scope": "Only raw.pasi total from selected preassigned regional values. No main display/category/response/rubric observation approved.",
+      "sources": [
+        {
+          "file": "pasi-ema-guideline-final27.pdf",
+          "sha256": "19dc105a6066e488c5aa790635755f6f815d6cf8597d5f9bf6d972171c5b9670",
+          "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-clinical-investigation-medicinal-products-indicated-treatment-psoriasis_en.pdf",
+          "edition": "EMA EMEA/CHMP/EWP/2454/02,2004, Appendix p17/18 reproduces PASI1978 calculation; not the original1978 article or current guideline approval.",
+          "readScope": "Current reviewer visually read official local original p17 Appendix tables and equation. Existing peer own Fraction explicitly covers3798 PASI totals. Three0–4 assigned signs, regional area codes and weights1/10,2/10,3/10,4/10.",
+          "excluded": [
+            "Regional signs/extent observation, percent-to-area rubric and absent-area sentinel0 are not clinically approved. Appendix table lists area1–6; this assigned-code calculation is not a full rubric equivalence claim.",
+            "No baseline response/percentage improvement or severity/treatment categories tested; raw.melhora and all clinical output omitted from the bank.",
+            "This official2004 Appendix read does not establish full original1978 article access, current clinical performance, rights or instrument wording approval."
+          ],
+          "previousDeclaredMethodVersion": "PASI/Fredriksson Pettersson 1978:4 regiões,3 sinais 0–4, área 0–6, total 0–72"
+        }
+      ],
+      "independentPeer": {
+        "status": "passed",
+        "scope": "Own Fraction totals for this method frozen before imports; original R3 source/Node/Chromium proof retained and R4-R2 bounded HTML/reversal correction, not a false claim of full reexecution by R4. Numeric bank/metadata packaging requires separate peer.",
+        "peer": {
+          "file": "reports/review-20261003/easi-halfsteps-independent-review-verify-final27-r4-r2.json",
+          "sha256": "59cc924186a6cc0d9008fe1fc6ba44d5cfce826eb4225ef6fbe06aaa10362b76"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "rightsApproval": "not-performed"
+      },
+      "metadataPackagingPeer": {
+        "status": "passed",
+        "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+        "peer": {
+          "file": "reports/review-20261003/easi-pasi-bank-packaging-independent-review-root-final27.json",
+          "sha256": "b13809fa223dd7a71b89e8c3dfb396efc120c03b9ad9bbd1c50b6fb22b60e1b7"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 11394,
+      "actualVmExecutions": 11394,
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/pasi/calculator.js",
+          "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+          "actualReplayFile": "apps/website/private/tool-code/pasi/calculator.js",
+          "currentSourceSha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+          "pendingSiblingEngineApplication": false
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/pasi/calculator.js",
+          "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+          "actualReplayFile": "apps/dashboard/private/tool-code/pasi/calculator.js",
+          "currentSourceSha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+          "pendingSiblingEngineApplication": false
+        },
+        {
+          "file": "apps/command-center/private/tool-code/pasi/calculator.js",
+          "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+          "actualReplayFile": "apps/command-center/private/tool-code/pasi/calculator.js",
+          "currentSourceSha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+          "pendingSiblingEngineApplication": false
+        }
+      ],
+      "qualifications": [
+        "Regional signs/extent observation, percent-to-area rubric and absent-area sentinel0 are not clinically approved. Appendix table lists area1–6; this assigned-code calculation is not a full rubric equivalence claim.",
+        "No baseline response/percentage improvement or severity/treatment categories tested; raw.melhora and all clinical output omitted from the bank.",
+        "This official2004 Appendix read does not establish full original1978 article access, current clinical performance, rights or instrument wording approval."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "evidencePath": "reports/review-20261003/easi-pasi-total-source-banks-execution-final27.json",
+      "evidenceSha256": "f403fd657b53637a6efb5b96c13ef9b8097f25ddf2fd9b991ae222346b89e915",
+      "prospectiveSource27Bindings": [
+        {
+          "file": "apps/website/private/tool-code/pasi/calculator.js",
+          "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/pasi/calculator.js",
+          "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/pasi/calculator.js",
+          "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b"
+        }
+      ],
+      "prospectiveSource27Replay": {
+        "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+        "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "PASI/Fredriksson Pettersson 1978:4 regiões,3 sinais 0–4, área 0–6, total 0–72",
+    "implementationVersion": "pasi@native-2026-10-03+8fdba30f80a0",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/357213/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Em cada região: (eritema + infiltração + descamação, cada um de 0 a 4) × área (0 a 6) × peso da região. Pesos: cabeça 0,1; membros superiores 0,2; tronco 0,3; membros inferiores 0,4. PASI = soma das quatro regiões (0 a 72). Área: 0 = nenhuma; 1 = < 10%; 2 = 10 a 29%; 3 = 30 a 49%; 4 = 50 a 69%; 5 = 70 a 89%; 6 = 90 a 100% da região.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "e_h",
+            "label": "Cabeça e pescoço: eritema",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0",
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          {
+            "key": "i_h",
+            "label": "Cabeça e pescoço: infiltração (espessura)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0",
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          {
+            "key": "d_h",
+            "label": "Cabeça e pescoço: descamação",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0",
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          {
+            "key": "a_h",
+            "label": "Cabeça e pescoço: área acometida da região",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 · sem lesão",
+              "1": "1 · menos de 10%",
+              "2": "2 · 10 a 29%",
+              "3": "3 · 30 a 49%",
+              "4": "4 · 50 a 69%",
+              "5": "5 · 70 a 89%",
+              "6": "6 · 90 a 100%"
+            }
+          },
+          {
+            "key": "e_s",
+            "label": "Membros superiores: eritema",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0",
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          {
+            "key": "i_s",
+            "label": "Membros superiores: infiltração (espessura)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0",
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          {
+            "key": "d_s",
+            "label": "Membros superiores: descamação",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0",
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          {
+            "key": "a_s",
+            "label": "Membros superiores: área acometida da região",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 · sem lesão",
+              "1": "1 · menos de 10%",
+              "2": "2 · 10 a 29%",
+              "3": "3 · 30 a 49%",
+              "4": "4 · 50 a 69%",
+              "5": "5 · 70 a 89%",
+              "6": "6 · 90 a 100%"
+            }
+          },
+          {
+            "key": "e_t",
+            "label": "Tronco: eritema",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0",
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          {
+            "key": "i_t",
+            "label": "Tronco: infiltração (espessura)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0",
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          {
+            "key": "d_t",
+            "label": "Tronco: descamação",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0",
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          {
+            "key": "a_t",
+            "label": "Tronco: área acometida da região",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 · sem lesão",
+              "1": "1 · menos de 10%",
+              "2": "2 · 10 a 29%",
+              "3": "3 · 30 a 49%",
+              "4": "4 · 50 a 69%",
+              "5": "5 · 70 a 89%",
+              "6": "6 · 90 a 100%"
+            }
+          },
+          {
+            "key": "e_i",
+            "label": "Membros inferiores: eritema",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0",
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          {
+            "key": "i_i",
+            "label": "Membros inferiores: infiltração (espessura)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0",
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          {
+            "key": "d_i",
+            "label": "Membros inferiores: descamação",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "0",
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          {
+            "key": "a_i",
+            "label": "Membros inferiores: área acometida da região",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0 · sem lesão",
+              "1": "1 · menos de 10%",
+              "2": "2 · 10 a 29%",
+              "3": "3 · 30 a 49%",
+              "4": "4 · 50 a 69%",
+              "5": "5 · 70 a 89%",
+              "6": "6 · 90 a 100%"
+            }
+          },
+          {
+            "key": "basal",
+            "label": "PASI basal (antes do tratamento), para calcular a resposta",
+            "type": "num",
+            "min": 0.1,
+            "max": 72,
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "60127bea46f3b459ac7a31c983037270c081d1277994479dea4f676c57d300bc"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Fredriksson T, Pettersson U. Severe psoriasis: oral therapy with a new retinoid. Dermatologica, 1978.",
+          "url": "https://doi.org/10.1159/000250839",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Severe psoriasis--oral therapy with a new retinoid.",
+            "year": "1978",
+            "firstPublicationDate": "1978-01-01",
+            "doi": "10.1159/000250839",
+            "pmid": "357213",
+            "journal": "Dermatologica",
+            "authors": "Fredriksson T, Pettersson U."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/357213/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "396ca91dfe7bfd7bec284d0f01fb9bf503579d849e4182262e4fad9f9c3110c9",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Finlay AY. Current severe psoriasis and the rule of tens. Br J Dermatol, 2005.",
+          "url": "https://doi.org/10.1111/j.1365-2133.2005.06502.x",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Current severe psoriasis and the rule of tens.",
+            "year": "2005",
+            "firstPublicationDate": "2005-05-01",
+            "doi": "10.1111/j.1365-2133.2005.06502.x",
+            "pmid": "15888138",
+            "journal": "The British journal of dermatology",
+            "authors": "Finlay AY."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/15888138/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "86f1cf2cc7513fc15e974363d5b43e38ba26f0d3018d80e0209801b9ea324e62",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T19:12:58.799Z",
+        "total": 3798,
+        "passed": 3798,
+        "sourceRowCount": 3798,
+        "uniqueApiInputCount": 3798,
+        "sourceContextCount": 3798,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "0b3e4670362fbea6e3d9c5b12ba6a48cdd31a9888b55d8b9d1acb92581d11311",
+          "total": 3798,
+          "bankRowCount": 3798,
+          "uniqueApiInputCount": 3798,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/dermatology-fraction-independent-verify-final27.json",
+              "sha256": "73cb5acaa2de2f11b9506171155e927e69e24507f8436975c69077cbc02673d3"
+            },
+            {
+              "file": "reports/review-20261003/dermatology-three-independent-expectations-final27.json",
+              "sha256": "f510a385c0d3abf34a3df08c449e9c932d2dc5fbc9a9cd1dddf2dddb6ec1af74"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/easi-pasi-total-source-banks-execution-final27.json",
+            "sha256": "f403fd657b53637a6efb5b96c13ef9b8097f25ddf2fd9b991ae222346b89e915"
+          },
+          "packagingRequirement": "Require current PASI engine SHA exact before fresh packaging."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 3798,
+          "uniqueApiInputs": 3798,
+          "duplicateRows": 0
+        },
+        "scope": "Only raw.pasi total from selected preassigned regional values. No main display/category/response/rubric observation approved.",
+        "sources": [
+          {
+            "file": "pasi-ema-guideline-final27.pdf",
+            "sha256": "19dc105a6066e488c5aa790635755f6f815d6cf8597d5f9bf6d972171c5b9670",
+            "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-clinical-investigation-medicinal-products-indicated-treatment-psoriasis_en.pdf",
+            "edition": "EMA EMEA/CHMP/EWP/2454/02,2004, Appendix p17/18 reproduces PASI1978 calculation; not the original1978 article or current guideline approval.",
+            "readScope": "Current reviewer visually read official local original p17 Appendix tables and equation. Existing peer own Fraction explicitly covers3798 PASI totals. Three0–4 assigned signs, regional area codes and weights1/10,2/10,3/10,4/10.",
+            "excluded": [
+              "Regional signs/extent observation, percent-to-area rubric and absent-area sentinel0 are not clinically approved. Appendix table lists area1–6; this assigned-code calculation is not a full rubric equivalence claim.",
+              "No baseline response/percentage improvement or severity/treatment categories tested; raw.melhora and all clinical output omitted from the bank.",
+              "This official2004 Appendix read does not establish full original1978 article access, current clinical performance, rights or instrument wording approval."
+            ],
+            "previousDeclaredMethodVersion": "PASI/Fredriksson Pettersson 1978:4 regiões,3 sinais 0–4, área 0–6, total 0–72"
+          }
+        ],
+        "independentPeer": {
+          "status": "passed",
+          "scope": "Own Fraction totals for this method frozen before imports; original R3 source/Node/Chromium proof retained and R4-R2 bounded HTML/reversal correction, not a false claim of full reexecution by R4. Numeric bank/metadata packaging requires separate peer.",
+          "peer": {
+            "file": "reports/review-20261003/easi-halfsteps-independent-review-verify-final27-r4-r2.json",
+            "sha256": "59cc924186a6cc0d9008fe1fc6ba44d5cfce826eb4225ef6fbe06aaa10362b76"
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "rightsApproval": "not-performed"
+        },
+        "metadataPackagingPeer": {
+          "status": "passed",
+          "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+          "peer": {
+            "file": "reports/review-20261003/easi-pasi-bank-packaging-independent-review-root-final27.json",
+            "sha256": "b13809fa223dd7a71b89e8c3dfb396efc120c03b9ad9bbd1c50b6fb22b60e1b7"
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 11394,
+        "actualVmExecutions": 11394,
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/pasi/calculator.js",
+            "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+            "actualReplayFile": "apps/website/private/tool-code/pasi/calculator.js",
+            "currentSourceSha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+            "pendingSiblingEngineApplication": false
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/pasi/calculator.js",
+            "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+            "actualReplayFile": "apps/dashboard/private/tool-code/pasi/calculator.js",
+            "currentSourceSha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+            "pendingSiblingEngineApplication": false
+          },
+          {
+            "file": "apps/command-center/private/tool-code/pasi/calculator.js",
+            "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+            "actualReplayFile": "apps/command-center/private/tool-code/pasi/calculator.js",
+            "currentSourceSha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+            "pendingSiblingEngineApplication": false
+          }
+        ],
+        "qualifications": [
+          "Regional signs/extent observation, percent-to-area rubric and absent-area sentinel0 are not clinically approved. Appendix table lists area1–6; this assigned-code calculation is not a full rubric equivalence claim.",
+          "No baseline response/percentage improvement or severity/treatment categories tested; raw.melhora and all clinical output omitted from the bank.",
+          "This official2004 Appendix read does not establish full original1978 article access, current clinical performance, rights or instrument wording approval."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "evidencePath": "reports/review-20261003/easi-pasi-total-source-banks-execution-final27.json",
+        "evidenceSha256": "f403fd657b53637a6efb5b96c13ef9b8097f25ddf2fd9b991ae222346b89e915",
+        "prospectiveSource27Bindings": [
+          {
+            "file": "apps/website/private/tool-code/pasi/calculator.js",
+            "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/pasi/calculator.js",
+            "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/pasi/calculator.js",
+            "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b"
+          }
+        ],
+        "prospectiveSource27Replay": {
+          "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+          "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b"
+    },
+    "limits": "O PASI quantifica extensão e sinais de psoríase, mas não identifica diagnóstico ou necessidade de um tratamento pelo total isolado. O estudo original ocorreu em psoríase crônica generalizada grave. Resposta percentual exige uma avaliação basal comparável; pesos, técnica e interpretação devem corresponder à versão.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.099Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não mostra pesos de quatro regiões, tabela de área, faixa etária ou cortes modernos. Regra dos dez é fonte posterior."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/pasi/calculator.js",
+    "bytes": 7138,
+    "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "b367a5de49292a2ef861c3701460a60a794cd1b1ba86d07c7e2eddef9d448eef",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "4c4fc33c4ffc0f45da0d2ecf0f9aa6fe06e74a351b81fc8c2baa2f3a630edec8",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "4c4fc33c4ffc0f45da0d2ecf0f9aa6fe06e74a351b81fc8c2baa2f3a630edec8",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
