@@ -1,0 +1,1010 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "pasi",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/pasi/calculator.js",
+    "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+    "bytes": 7138
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "pasi",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Cabeça (2+2+1, área 2) = 1,0 + tronco (3+2+2, área 3) = 6,3: PASI 7,3",
+      "originalInput": {
+        "e_h": "2",
+        "i_h": "2",
+        "d_h": "1",
+        "a_h": "2",
+        "e_t": "3",
+        "i_t": "2",
+        "d_t": "2",
+        "a_t": "3",
+        "e_s": "0",
+        "i_s": "0",
+        "d_s": "0",
+        "a_s": "0",
+        "e_i": "0",
+        "i_i": "0",
+        "d_i": "0",
+        "a_i": "0"
+      },
+      "input": {
+        "e_h": "2",
+        "i_h": "2",
+        "d_h": "1",
+        "a_h": "2",
+        "e_t": "3",
+        "i_t": "2",
+        "d_t": "2",
+        "a_t": "3",
+        "e_s": "0",
+        "i_s": "0",
+        "d_s": "0",
+        "a_s": "0",
+        "e_i": "0",
+        "i_i": "0",
+        "d_i": "0",
+        "a_i": "0"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pasi": 7.3
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "7,3",
+          "de 72"
+        ],
+        "label": "PASI",
+        "raw": {
+          "pasi": 7.3,
+          "melhora": null
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/pasi/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "e_h": "2",
+            "i_h": "2",
+            "d_h": "1",
+            "a_h": "2",
+            "e_t": "3",
+            "i_t": "2",
+            "d_t": "2",
+            "a_t": "3",
+            "e_s": "0",
+            "i_s": "0",
+            "d_s": "0",
+            "a_s": "0",
+            "e_i": "0",
+            "i_i": "0",
+            "d_i": "0",
+            "a_i": "0"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/pasi/calculate",
+          "startedAt": "2026-10-05T17:39:21.258Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "pasi",
+              "main": [
+                "7,3",
+                "de 72"
+              ],
+              "label": "PASI",
+              "raw": {
+                "pasi": 7.3,
+                "melhora": null
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "a8d40b41b7dfc032ba95c60dbe52f1ea170ce2d2f5a3d926be987da07f81cfe1",
+          "bytes": 133,
+          "elapsedMs": 9.134500000014668
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/pasi/calculate",
+        "startedAt": "2026-10-05T17:39:21.258Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "pasi",
+            "main": [
+              "7,3",
+              "de 72"
+            ],
+            "label": "PASI",
+            "raw": {
+              "pasi": 7.3,
+              "melhora": null
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "a8d40b41b7dfc032ba95c60dbe52f1ea170ce2d2f5a3d926be987da07f81cfe1",
+        "bytes": 133,
+        "elapsedMs": 9.134500000014668
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.pasi",
+            "expected": 7.3,
+            "obtained": 7.3,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pasi",
+            "expected": 7.3,
+            "obtained": 7.3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.melhora",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7,3",
+            "obtained": "7,3",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 72",
+            "obtained": "de 72",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "pasi",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Todas as regiões 3+3+3 com área 4: 9 × 4 × 1,0 = 36",
+      "originalInput": {
+        "e_h": "3",
+        "i_h": "3",
+        "d_h": "3",
+        "a_h": "4",
+        "e_s": "3",
+        "i_s": "3",
+        "d_s": "3",
+        "a_s": "4",
+        "e_t": "3",
+        "i_t": "3",
+        "d_t": "3",
+        "a_t": "4",
+        "e_i": "3",
+        "i_i": "3",
+        "d_i": "3",
+        "a_i": "4"
+      },
+      "input": {
+        "e_h": "3",
+        "i_h": "3",
+        "d_h": "3",
+        "a_h": "4",
+        "e_s": "3",
+        "i_s": "3",
+        "d_s": "3",
+        "a_s": "4",
+        "e_t": "3",
+        "i_t": "3",
+        "d_t": "3",
+        "a_t": "4",
+        "e_i": "3",
+        "i_i": "3",
+        "d_i": "3",
+        "a_i": "4"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pasi": 36
+        },
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "36,0",
+          "de 72"
+        ],
+        "label": "PASI",
+        "raw": {
+          "pasi": 36,
+          "melhora": null
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/pasi/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "e_h": "3",
+            "i_h": "3",
+            "d_h": "3",
+            "a_h": "4",
+            "e_s": "3",
+            "i_s": "3",
+            "d_s": "3",
+            "a_s": "4",
+            "e_t": "3",
+            "i_t": "3",
+            "d_t": "3",
+            "a_t": "4",
+            "e_i": "3",
+            "i_i": "3",
+            "d_i": "3",
+            "a_i": "4"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/pasi/calculate",
+          "startedAt": "2026-10-05T17:39:21.572Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "pasi",
+              "main": [
+                "36,0",
+                "de 72"
+              ],
+              "label": "PASI",
+              "raw": {
+                "pasi": 36,
+                "melhora": null
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "e1538014d7b8d4aeaf51608f3fb422219dc1125d50d27866de131f529c59d515",
+          "bytes": 133,
+          "elapsedMs": 8.841099999990547
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/pasi/calculate",
+        "startedAt": "2026-10-05T17:39:21.572Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "pasi",
+            "main": [
+              "36,0",
+              "de 72"
+            ],
+            "label": "PASI",
+            "raw": {
+              "pasi": 36,
+              "melhora": null
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "e1538014d7b8d4aeaf51608f3fb422219dc1125d50d27866de131f529c59d515",
+        "bytes": 133,
+        "elapsedMs": 8.841099999990547
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.pasi",
+            "expected": 36,
+            "obtained": 36,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pasi",
+            "expected": 36,
+            "obtained": 36,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.melhora",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "36,0",
+            "obtained": "36,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 72",
+            "obtained": "de 72",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "pasi",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "PASI 7,3 com basal 36: melhora de 79,7% (PASI 75)",
+      "originalInput": {
+        "e_h": "2",
+        "i_h": "2",
+        "d_h": "1",
+        "a_h": "2",
+        "e_t": "3",
+        "i_t": "2",
+        "d_t": "2",
+        "a_t": "3",
+        "e_s": "0",
+        "i_s": "0",
+        "d_s": "0",
+        "a_s": "0",
+        "e_i": "0",
+        "i_i": "0",
+        "d_i": "0",
+        "a_i": "0",
+        "basal": 36
+      },
+      "input": {
+        "e_h": "2",
+        "i_h": "2",
+        "d_h": "1",
+        "a_h": "2",
+        "e_t": "3",
+        "i_t": "2",
+        "d_t": "2",
+        "a_t": "3",
+        "e_s": "0",
+        "i_s": "0",
+        "d_s": "0",
+        "a_s": "0",
+        "e_i": "0",
+        "i_i": "0",
+        "d_i": "0",
+        "a_i": "0",
+        "basal": 36
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pasi": 7.3,
+          "melhora": 79.72
+        }
+      },
+      "recordedResult": {
+        "main": [
+          "7,3",
+          "de 72"
+        ],
+        "label": "PASI",
+        "raw": {
+          "pasi": 7.3,
+          "melhora": 79.72222222222221
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/pasi/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "e_h": "2",
+            "i_h": "2",
+            "d_h": "1",
+            "a_h": "2",
+            "e_t": "3",
+            "i_t": "2",
+            "d_t": "2",
+            "a_t": "3",
+            "e_s": "0",
+            "i_s": "0",
+            "d_s": "0",
+            "a_s": "0",
+            "e_i": "0",
+            "i_i": "0",
+            "d_i": "0",
+            "a_i": "0",
+            "basal": 36
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/pasi/calculate",
+          "startedAt": "2026-10-05T17:39:21.886Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "pasi",
+              "main": [
+                "7,3",
+                "de 72"
+              ],
+              "label": "PASI",
+              "raw": {
+                "pasi": 7.3,
+                "melhora": 79.72222222222221
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "cd44bd5c843b5dea75257f0d7027a5dd0614bcc8424638e1375ced5008e2e439",
+          "bytes": 146,
+          "elapsedMs": 3.7115000000048894
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/pasi/calculate",
+        "startedAt": "2026-10-05T17:39:21.886Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "pasi",
+            "main": [
+              "7,3",
+              "de 72"
+            ],
+            "label": "PASI",
+            "raw": {
+              "pasi": 7.3,
+              "melhora": 79.72222222222221
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "cd44bd5c843b5dea75257f0d7027a5dd0614bcc8424638e1375ced5008e2e439",
+        "bytes": 146,
+        "elapsedMs": 3.7115000000048894
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.pasi",
+            "expected": 7.3,
+            "obtained": 7.3,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.melhora",
+            "expected": 79.72,
+            "obtained": 79.72222222222221,
+            "tolerance": 0.00500001,
+            "difference": 0.002222222222215464,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pasi",
+            "expected": 7.3,
+            "obtained": 7.3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.melhora",
+            "expected": 79.72222222222221,
+            "obtained": 79.72222222222221,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7,3",
+            "obtained": "7,3",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 72",
+            "obtained": "de 72",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "pasi",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Limite: membros inferiores 3+3+2 com área 3 = 9,6; + membros superiores 1+0+1 área 1 = 0,4: PASI 10,0 (leve)",
+      "originalInput": {
+        "e_i": "3",
+        "i_i": "3",
+        "d_i": "2",
+        "a_i": "3",
+        "e_s": "1",
+        "i_s": "0",
+        "d_s": "1",
+        "a_s": "1",
+        "e_h": "0",
+        "i_h": "0",
+        "d_h": "0",
+        "a_h": "0",
+        "e_t": "0",
+        "i_t": "0",
+        "d_t": "0",
+        "a_t": "0"
+      },
+      "input": {
+        "e_i": "3",
+        "i_i": "3",
+        "d_i": "2",
+        "a_i": "3",
+        "e_s": "1",
+        "i_s": "0",
+        "d_s": "1",
+        "a_s": "1",
+        "e_h": "0",
+        "i_h": "0",
+        "d_h": "0",
+        "a_h": "0",
+        "e_t": "0",
+        "i_t": "0",
+        "d_t": "0",
+        "a_t": "0"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pasi": 10
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "10,0",
+          "de 72"
+        ],
+        "label": "PASI",
+        "raw": {
+          "pasi": 10,
+          "melhora": null
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/pasi/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "e_i": "3",
+            "i_i": "3",
+            "d_i": "2",
+            "a_i": "3",
+            "e_s": "1",
+            "i_s": "0",
+            "d_s": "1",
+            "a_s": "1",
+            "e_h": "0",
+            "i_h": "0",
+            "d_h": "0",
+            "a_h": "0",
+            "e_t": "0",
+            "i_t": "0",
+            "d_t": "0",
+            "a_t": "0"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/pasi/calculate",
+          "startedAt": "2026-10-05T17:39:22.198Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "pasi",
+              "main": [
+                "10,0",
+                "de 72"
+              ],
+              "label": "PASI",
+              "raw": {
+                "pasi": 10,
+                "melhora": null
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "b11d1ad51de77d4c11d49a8651fa94839eef2a4130e2e658e0fd6751ec6610e5",
+          "bytes": 133,
+          "elapsedMs": 3.606400000018766
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/pasi/calculate",
+        "startedAt": "2026-10-05T17:39:22.198Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "pasi",
+            "main": [
+              "10,0",
+              "de 72"
+            ],
+            "label": "PASI",
+            "raw": {
+              "pasi": 10,
+              "melhora": null
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "b11d1ad51de77d4c11d49a8651fa94839eef2a4130e2e658e0fd6751ec6610e5",
+        "bytes": 133,
+        "elapsedMs": 3.606400000018766
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.pasi",
+            "expected": 10,
+            "obtained": 10,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pasi",
+            "expected": 10,
+            "obtained": 10,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.melhora",
+            "expected": null,
+            "obtained": null,
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "10,0",
+            "obtained": "10,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de 72",
+            "obtained": "de 72",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
