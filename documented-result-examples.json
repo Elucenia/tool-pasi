@@ -1,0 +1,824 @@
+{
+  "id": "pasi",
+  "implementationVersion": "pasi@native-2026-10-05+f18a049e0867",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Cabeça (2+2+1, área 2) = 1,0 + tronco (3+2+2, área 3) = 6,3: PASI 7,3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Psoríase leve pelo PASI (≤ 10)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Pela regra dos dez, BSA > 10% ou impacto importante na qualidade de vida também caracterizam doença grave, mesmo com PASI ≤ 10.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todas as regiões 3+3+3 com área 4: 9 × 4 × 1,0 = 36",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Psoríase moderada a grave pela regra dos dez (PASI > 10)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "PASI 7,3 com basal 36: melhora de 79,7% (PASI 75)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Melhora em relação ao PASI basal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "80% (PASI 75)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Psoríase leve pelo PASI (≤ 10)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Pela regra dos dez, BSA > 10% ou impacto importante na qualidade de vida também caracterizam doença grave, mesmo com PASI ≤ 10.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: membros inferiores 3+3+2 com área 3 = 9,6; + membros superiores 1+0+1 área 1 = 0,4: PASI 10,0 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Psoríase leve pelo PASI (≤ 10)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Pela regra dos dez, BSA > 10% ou impacto importante na qualidade de vida também caracterizam doença grave, mesmo com PASI ≤ 10.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Cabeça (2+2+1, área 2) = 1,0 + tronco (3+2+2, área 3) = 6,3: PASI 7,3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mild psoriasis by PASI (≤ 10)",
+            "locale": "en",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "By the rule of tens, BSA > 10% or important impact on quality of life also characterize severe disease, even with PASI ≤ 10.",
+            "locale": "en",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todas as regiões 3+3+3 com área 4: 9 × 4 × 1,0 = 36",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderate to severe psoriasis by the rule of tens (PASI > 10)",
+            "locale": "en",
+            "template": "documented-authored-f90b18b005ba76957f4a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "PASI 7,3 com basal 36: melhora de 79,7% (PASI 75)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Improvement from baseline PASI",
+                "locale": "en",
+                "template": "documented-authored-e41f5066c05c3cfdbe4b"
+              },
+              "value": {
+                "text": "80% (PASI 75)",
+                "locale": "en",
+                "template": "documented-authored-5aaf1d3bd56a2c4c8256",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Mild psoriasis by PASI (≤ 10)",
+            "locale": "en",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "By the rule of tens, BSA > 10% or important impact on quality of life also characterize severe disease, even with PASI ≤ 10.",
+            "locale": "en",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: membros inferiores 3+3+2 com área 3 = 9,6; + membros superiores 1+0+1 área 1 = 0,4: PASI 10,0 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mild psoriasis by PASI (≤ 10)",
+            "locale": "en",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "By the rule of tens, BSA > 10% or important impact on quality of life also characterize severe disease, even with PASI ≤ 10.",
+            "locale": "en",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Cabeça (2+2+1, área 2) = 1,0 + tronco (3+2+2, área 3) = 6,3: PASI 7,3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Psoriasis leve por PASI (≤ 10)",
+            "locale": "es",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "Según la regla de los diez, un BSA > 10% o un impacto importante en la calidad de vida también caracterizan enfermedad grave, incluso con PASI ≤ 10.",
+            "locale": "es",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todas as regiões 3+3+3 com área 4: 9 × 4 × 1,0 = 36",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Psoriasis moderada a grave por la regla de los diez (PASI > 10)",
+            "locale": "es",
+            "template": "documented-authored-f90b18b005ba76957f4a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "PASI 7,3 com basal 36: melhora de 79,7% (PASI 75)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Mejoría respecto al PASI basal",
+                "locale": "es",
+                "template": "documented-authored-e41f5066c05c3cfdbe4b"
+              },
+              "value": {
+                "text": "80% (PASI 75)",
+                "locale": "es",
+                "template": "documented-authored-5aaf1d3bd56a2c4c8256",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Psoriasis leve por PASI (≤ 10)",
+            "locale": "es",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "Según la regla de los diez, un BSA > 10% o un impacto importante en la calidad de vida también caracterizan enfermedad grave, incluso con PASI ≤ 10.",
+            "locale": "es",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: membros inferiores 3+3+2 com área 3 = 9,6; + membros superiores 1+0+1 área 1 = 0,4: PASI 10,0 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Psoriasis leve por PASI (≤ 10)",
+            "locale": "es",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "Según la regla de los diez, un BSA > 10% o un impacto importante en la calidad de vida también caracterizan enfermedad grave, incluso con PASI ≤ 10.",
+            "locale": "es",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Cabeça (2+2+1, área 2) = 1,0 + tronco (3+2+2, área 3) = 6,3: PASI 7,3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Psoriasis léger selon le PASI (≤ 10)",
+            "locale": "fr",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "Selon la règle des dix, une BSA > 10 % ou un impact important sur la qualité de vie caractérisent également une maladie sévère, même avec un PASI ≤ 10.",
+            "locale": "fr",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todas as regiões 3+3+3 com área 4: 9 × 4 × 1,0 = 36",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Psoriasis modéré à sévère selon la règle des dix (PASI > 10)",
+            "locale": "fr",
+            "template": "documented-authored-f90b18b005ba76957f4a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "PASI 7,3 com basal 36: melhora de 79,7% (PASI 75)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Amélioration par rapport au PASI de base",
+                "locale": "fr",
+                "template": "documented-authored-e41f5066c05c3cfdbe4b"
+              },
+              "value": {
+                "text": "80% (PASI 75)",
+                "locale": "fr",
+                "template": "documented-authored-5aaf1d3bd56a2c4c8256",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Psoriasis léger selon le PASI (≤ 10)",
+            "locale": "fr",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "Selon la règle des dix, une BSA > 10 % ou un impact important sur la qualité de vie caractérisent également une maladie sévère, même avec un PASI ≤ 10.",
+            "locale": "fr",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: membros inferiores 3+3+2 com área 3 = 9,6; + membros superiores 1+0+1 área 1 = 0,4: PASI 10,0 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Psoriasis léger selon le PASI (≤ 10)",
+            "locale": "fr",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "Selon la règle des dix, une BSA > 10 % ou un impact important sur la qualité de vie caractérisent également une maladie sévère, même avec un PASI ≤ 10.",
+            "locale": "fr",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Cabeça (2+2+1, área 2) = 1,0 + tronco (3+2+2, área 3) = 6,3: PASI 7,3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Leichte Psoriasis nach PASI (≤ 10)",
+            "locale": "de",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "Nach der Regel der Zehn charakterisieren auch BSA > 10 % oder eine erhebliche Beeinträchtigung der Lebensqualität eine schwere Erkrankung, selbst bei PASI ≤ 10.",
+            "locale": "de",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todas as regiões 3+3+3 com área 4: 9 × 4 × 1,0 = 36",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mittelgradige bis schwere Psoriasis nach der Regel der Zehn (PASI > 10)",
+            "locale": "de",
+            "template": "documented-authored-f90b18b005ba76957f4a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "PASI 7,3 com basal 36: melhora de 79,7% (PASI 75)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Verbesserung gegenüber dem Ausgangs-PASI",
+                "locale": "de",
+                "template": "documented-authored-e41f5066c05c3cfdbe4b"
+              },
+              "value": {
+                "text": "80% (PASI 75)",
+                "locale": "de",
+                "template": "documented-authored-5aaf1d3bd56a2c4c8256",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Leichte Psoriasis nach PASI (≤ 10)",
+            "locale": "de",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "Nach der Regel der Zehn charakterisieren auch BSA > 10 % oder eine erhebliche Beeinträchtigung der Lebensqualität eine schwere Erkrankung, selbst bei PASI ≤ 10.",
+            "locale": "de",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: membros inferiores 3+3+2 com área 3 = 9,6; + membros superiores 1+0+1 área 1 = 0,4: PASI 10,0 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Leichte Psoriasis nach PASI (≤ 10)",
+            "locale": "de",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "Nach der Regel der Zehn charakterisieren auch BSA > 10 % oder eine erhebliche Beeinträchtigung der Lebensqualität eine schwere Erkrankung, selbst bei PASI ≤ 10.",
+            "locale": "de",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Cabeça (2+2+1, área 2) = 1,0 + tronco (3+2+2, área 3) = 6,3: PASI 7,3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Psoriasi lieve secondo il PASI (≤ 10)",
+            "locale": "it",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "Secondo la regola dei dieci, un BSA > 10% o un importante impatto sulla qualità di vita caratterizzano anche una malattia grave, anche con PASI ≤ 10.",
+            "locale": "it",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todas as regiões 3+3+3 com área 4: 9 × 4 × 1,0 = 36",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Psoriasi moderata-grave secondo la regola dei dieci (PASI > 10)",
+            "locale": "it",
+            "template": "documented-authored-f90b18b005ba76957f4a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "PASI 7,3 com basal 36: melhora de 79,7% (PASI 75)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Miglioramento rispetto al PASI basale",
+                "locale": "it",
+                "template": "documented-authored-e41f5066c05c3cfdbe4b"
+              },
+              "value": {
+                "text": "80% (PASI 75)",
+                "locale": "it",
+                "template": "documented-authored-5aaf1d3bd56a2c4c8256",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Psoriasi lieve secondo il PASI (≤ 10)",
+            "locale": "it",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "Secondo la regola dei dieci, un BSA > 10% o un importante impatto sulla qualità di vita caratterizzano anche una malattia grave, anche con PASI ≤ 10.",
+            "locale": "it",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: membros inferiores 3+3+2 com área 3 = 9,6; + membros superiores 1+0+1 área 1 = 0,4: PASI 10,0 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Psoriasi lieve secondo il PASI (≤ 10)",
+            "locale": "it",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "Secondo la regola dei dieci, un BSA > 10% o un importante impatto sulla qualità di vita caratterizzano anche una malattia grave, anche con PASI ≤ 10.",
+            "locale": "it",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Cabeça (2+2+1, área 2) = 1,0 + tronco (3+2+2, área 3) = 6,3: PASI 7,3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "صدفية خفيفة بحسب PASI (≤ 10)",
+            "locale": "ar",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "وفقًا لقاعدة العشرات، فإن BSA > 10% أو التأثير المهم على جودة الحياة يميزان أيضًا المرض الشديد، حتى مع PASI ≤ 10.",
+            "locale": "ar",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todas as regiões 3+3+3 com área 4: 9 × 4 × 1,0 = 36",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "صدفية متوسطة إلى شديدة وفقًا لقاعدة العشرات (PASI > 10)",
+            "locale": "ar",
+            "template": "documented-authored-f90b18b005ba76957f4a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "PASI 7,3 com basal 36: melhora de 79,7% (PASI 75)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "تحسن مقارنةً بـ PASI الأساسي",
+                "locale": "ar",
+                "template": "documented-authored-e41f5066c05c3cfdbe4b"
+              },
+              "value": {
+                "text": "٨٠% (PASI 75)",
+                "locale": "ar",
+                "template": "documented-authored-5aaf1d3bd56a2c4c8256",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "صدفية خفيفة بحسب PASI (≤ 10)",
+            "locale": "ar",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "وفقًا لقاعدة العشرات، فإن BSA > 10% أو التأثير المهم على جودة الحياة يميزان أيضًا المرض الشديد، حتى مع PASI ≤ 10.",
+            "locale": "ar",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: membros inferiores 3+3+2 com área 3 = 9,6; + membros superiores 1+0+1 área 1 = 0,4: PASI 10,0 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "صدفية خفيفة بحسب PASI (≤ 10)",
+            "locale": "ar",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "وفقًا لقاعدة العشرات، فإن BSA > 10% أو التأثير المهم على جودة الحياة يميزان أيضًا المرض الشديد، حتى مع PASI ≤ 10.",
+            "locale": "ar",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Cabeça (2+2+1, área 2) = 1,0 + tronco (3+2+2, área 3) = 6,3: PASI 7,3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "按 PASI 评估为轻度银屑病（≤ 10）",
+            "locale": "zh",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "按照“十规则”，即使 PASI ≤ 10，BSA > 10% 或对生活质量有显著影响也同样表明为重症。",
+            "locale": "zh",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todas as regiões 3+3+3 com área 4: 9 × 4 × 1,0 = 36",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "按十规则为中重度银屑病（PASI > 10）",
+            "locale": "zh",
+            "template": "documented-authored-f90b18b005ba76957f4a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "PASI 7,3 com basal 36: melhora de 79,7% (PASI 75)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "较基线 PASI 改善",
+                "locale": "zh",
+                "template": "documented-authored-e41f5066c05c3cfdbe4b"
+              },
+              "value": {
+                "text": "80%（PASI 75）",
+                "locale": "zh",
+                "template": "documented-authored-5aaf1d3bd56a2c4c8256",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "按 PASI 评估为轻度银屑病（≤ 10）",
+            "locale": "zh",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "按照“十规则”，即使 PASI ≤ 10，BSA > 10% 或对生活质量有显著影响也同样表明为重症。",
+            "locale": "zh",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: membros inferiores 3+3+2 com área 3 = 9,6; + membros superiores 1+0+1 área 1 = 0,4: PASI 10,0 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "按 PASI 评估为轻度银屑病（≤ 10）",
+            "locale": "zh",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "按照“十规则”，即使 PASI ≤ 10，BSA > 10% 或对生活质量有显著影响也同样表明为重症。",
+            "locale": "zh",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Cabeça (2+2+1, área 2) = 1,0 + tronco (3+2+2, área 3) = 6,3: PASI 7,3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PASI による軽症乾癬（≤ 10）",
+            "locale": "ja",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "10の法則では、BSA > 10% または生活の質への大きな影響も、PASI ≤ 10 であっても重症を示す。",
+            "locale": "ja",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todas as regiões 3+3+3 com área 4: 9 × 4 × 1,0 = 36",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "10の法則による中等症から重症の乾癬（PASI > 10）",
+            "locale": "ja",
+            "template": "documented-authored-f90b18b005ba76957f4a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "PASI 7,3 com basal 36: melhora de 79,7% (PASI 75)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "ベースライン PASI からの改善",
+                "locale": "ja",
+                "template": "documented-authored-e41f5066c05c3cfdbe4b"
+              },
+              "value": {
+                "text": "80%（PASI 75）",
+                "locale": "ja",
+                "template": "documented-authored-5aaf1d3bd56a2c4c8256",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "PASI による軽症乾癬（≤ 10）",
+            "locale": "ja",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "10の法則では、BSA > 10% または生活の質への大きな影響も、PASI ≤ 10 であっても重症を示す。",
+            "locale": "ja",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: membros inferiores 3+3+2 com área 3 = 9,6; + membros superiores 1+0+1 área 1 = 0,4: PASI 10,0 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PASI による軽症乾癬（≤ 10）",
+            "locale": "ja",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "10の法則では、BSA > 10% または生活の質への大きな影響も、PASI ≤ 10 であっても重症を示す。",
+            "locale": "ja",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Cabeça (2+2+1, área 2) = 1,0 + tronco (3+2+2, área 3) = 6,3: PASI 7,3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PASI के अनुसार हल्का सोरायसिस (≤ 10)",
+            "locale": "hi",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "दस के नियम के अनुसार, BSA > 10% या जीवन-गुणवत्ता पर महत्वपूर्ण प्रभाव भी, PASI ≤ 10 होने पर भी, गंभीर रोग को दर्शाते हैं।",
+            "locale": "hi",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Todas as regiões 3+3+3 com área 4: 9 × 4 × 1,0 = 36",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "दस के नियम के अनुसार मध्यम से गंभीर सोरायसिस (PASI > 10)",
+            "locale": "hi",
+            "template": "documented-authored-f90b18b005ba76957f4a"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "PASI 7,3 com basal 36: melhora de 79,7% (PASI 75)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "आधारभूत PASI की तुलना में सुधार",
+                "locale": "hi",
+                "template": "documented-authored-e41f5066c05c3cfdbe4b"
+              },
+              "value": {
+                "text": "80% (PASI 75)",
+                "locale": "hi",
+                "template": "documented-authored-5aaf1d3bd56a2c4c8256",
+                "sourceNumbers": [
+                  80
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "PASI के अनुसार हल्का सोरायसिस (≤ 10)",
+            "locale": "hi",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "दस के नियम के अनुसार, BSA > 10% या जीवन-गुणवत्ता पर महत्वपूर्ण प्रभाव भी, PASI ≤ 10 होने पर भी, गंभीर रोग को दर्शाते हैं।",
+            "locale": "hi",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Limite: membros inferiores 3+3+2 com área 3 = 9,6; + membros superiores 1+0+1 área 1 = 0,4: PASI 10,0 (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "PASI के अनुसार हल्का सोरायसिस (≤ 10)",
+            "locale": "hi",
+            "template": "documented-authored-260c303a7b288b573692"
+          },
+          "note": {
+            "text": "दस के नियम के अनुसार, BSA > 10% या जीवन-गुणवत्ता पर महत्वपूर्ण प्रभाव भी, PASI ≤ 10 होने पर भी, गंभीर रोग को दर्शाते हैं।",
+            "locale": "hi",
+            "template": "documented-authored-ee5aa9101f2408183ce6"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

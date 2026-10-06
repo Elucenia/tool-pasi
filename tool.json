@@ -520,7 +520,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "PASI/Fredriksson Pettersson 1978:4 regiões,3 sinais 0–4, área 0–6, total 0–72",
-    "implementationVersion": "pasi@native-2026-10-03+8fdba30f80a0",
+    "implementationVersion": "pasi@native-2026-10-05+f18a049e0867",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/357213/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -942,7 +942,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b"
+      "implementationHash": "f18a049e0867f1e9d90d9a52b64a43dc77d2e492d7ba9495016124e2bfb386bb",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "pasi@native-2026-10-03+8fdba30f80a0",
+          "previousImplementationHash": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+          "implementationHash": "f18a049e0867f1e9d90d9a52b64a43dc77d2e492d7ba9495016124e2bfb386bb",
+          "scientificBodySha256": "a244e793683ec0665cc97cce51dc9c12dda0f50698dc38f33fe2c4f376a8c150",
+          "metadataContractHash": "60127bea46f3b459ac7a31c983037270c081d1277994479dea4f676c57d300bc",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O PASI quantifica extensão e sinais de psoríase, mas não identifica diagnóstico ou necessidade de um tratamento pelo total isolado. O estudo original ocorreu em psoríase crônica generalizada grave. Resposta percentual exige uma avaliação basal comparável; pesos, técnica e interpretação devem corresponder à versão.",
     "sourceLimitEvidence": {
@@ -961,20 +989,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/pasi/calculator.js",
-    "bytes": 7138,
-    "sha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b"
+    "bytes": 7343,
+    "sha256": "f18a049e0867f1e9d90d9a52b64a43dc77d2e492d7ba9495016124e2bfb386bb"
   },
-  "sourceToolSha256": "b367a5de49292a2ef861c3701460a60a794cd1b1ba86d07c7e2eddef9d448eef",
+  "sourceToolSha256": "fe99f4f37c56280319a4cf1b8a71447ff58e5692dec37910f87e0f21dbe950aa",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "4c4fc33c4ffc0f45da0d2ecf0f9aa6fe06e74a351b81fc8c2baa2f3a630edec8",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "4c4fc33c4ffc0f45da0d2ecf0f9aa6fe06e74a351b81fc8c2baa2f3a630edec8",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

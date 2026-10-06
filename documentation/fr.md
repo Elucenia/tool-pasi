@@ -229,3 +229,37 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Psoriasis léger selon le PASI (≤ 10)
+
+Selon la règle des dix, une BSA > 10 % ou un impact important sur la qualité de vie caractérisent également une maladie sévère, même avec un PASI ≤ 10.
+
+
+### 2
+
+Psoriasis modéré à sévère selon la règle des dix (PASI > 10)
+
+
+### 3
+
+Psoriasis léger selon le PASI (≤ 10)
+
+| Détails du résultat | |
+| --- | --- |
+| Amélioration par rapport au PASI de base | 80% (PASI 75) |
+
+Selon la règle des dix, une BSA > 10 % ou un impact important sur la qualité de vie caractérisent également une maladie sévère, même avec un PASI ≤ 10.
+
+
+### 4
+
+Psoriasis léger selon le PASI (≤ 10)
+
+Selon la règle des dix, une BSA > 10 % ou un impact important sur la qualité de vie caractérisent également une maladie sévère, même avec un PASI ≤ 10.
+

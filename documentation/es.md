@@ -229,3 +229,37 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Psoriasis leve por PASI (≤ 10)
+
+Según la regla de los diez, un BSA > 10% o un impacto importante en la calidad de vida también caracterizan enfermedad grave, incluso con PASI ≤ 10.
+
+
+### 2
+
+Psoriasis moderada a grave por la regla de los diez (PASI > 10)
+
+
+### 3
+
+Psoriasis leve por PASI (≤ 10)
+
+| Detalles del resultado | |
+| --- | --- |
+| Mejoría respecto al PASI basal | 80% (PASI 75) |
+
+Según la regla de los diez, un BSA > 10% o un impacto importante en la calidad de vida también caracterizan enfermedad grave, incluso con PASI ≤ 10.
+
+
+### 4
+
+Psoriasis leve por PASI (≤ 10)
+
+Según la regla de los diez, un BSA > 10% o un impacto importante en la calidad de vida también caracterizan enfermedad grave, incluso con PASI ≤ 10.
+

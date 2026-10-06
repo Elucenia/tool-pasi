@@ -1,0 +1,298 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "pasi",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "44d751e10ddee4028619a7bf034c40c7d9cf062e",
+    "oldEngineSha256": "8fdba30f80a0f3935a1698f434f07fa084d2596646b02e58fa0140922f97d10b",
+    "currentEngineSha256": "f18a049e0867f1e9d90d9a52b64a43dc77d2e492d7ba9495016124e2bfb386bb"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Cabeça (2+2+1, área 2) = 1,0 + tronco (3+2+2, área 3) = 6,3: PASI 7,3",
+      "input": {
+        "e_h": "2",
+        "i_h": "2",
+        "d_h": "1",
+        "a_h": "2",
+        "e_t": "3",
+        "i_t": "2",
+        "d_t": "2",
+        "a_t": "3",
+        "e_s": "0",
+        "i_s": "0",
+        "d_s": "0",
+        "a_s": "0",
+        "e_i": "0",
+        "i_i": "0",
+        "d_i": "0",
+        "a_i": "0"
+      },
+      "publicOutput": {
+        "id": "pasi",
+        "main": [
+          "7,3",
+          "de 72"
+        ],
+        "label": "PASI",
+        "raw": {
+          "pasi": 7.3,
+          "melhora": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pasi": 7.3
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7,3",
+          "de 72"
+        ],
+        "label": "PASI",
+        "level": "low",
+        "verdict": "Psoríase leve pelo PASI (≤ 10)",
+        "rows": [],
+        "note": "Pela regra dos dez, BSA &gt; 10% ou impacto importante na qualidade de vida também caracterizam doença grave, mesmo com PASI ≤ 10.",
+        "raw": {
+          "pasi": 7.3,
+          "melhora": null
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Todas as regiões 3+3+3 com área 4: 9 × 4 × 1,0 = 36",
+      "input": {
+        "e_h": "3",
+        "i_h": "3",
+        "d_h": "3",
+        "a_h": "4",
+        "e_s": "3",
+        "i_s": "3",
+        "d_s": "3",
+        "a_s": "4",
+        "e_t": "3",
+        "i_t": "3",
+        "d_t": "3",
+        "a_t": "4",
+        "e_i": "3",
+        "i_i": "3",
+        "d_i": "3",
+        "a_i": "4"
+      },
+      "publicOutput": {
+        "id": "pasi",
+        "main": [
+          "36,0",
+          "de 72"
+        ],
+        "label": "PASI",
+        "raw": {
+          "pasi": 36,
+          "melhora": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pasi": 36
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "36,0",
+          "de 72"
+        ],
+        "label": "PASI",
+        "level": "high",
+        "verdict": "Psoríase moderada a grave pela regra dos dez (PASI &gt; 10)",
+        "rows": [],
+        "note": "",
+        "raw": {
+          "pasi": 36,
+          "melhora": null
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "PASI 7,3 com basal 36: melhora de 79,7% (PASI 75)",
+      "input": {
+        "e_h": "2",
+        "i_h": "2",
+        "d_h": "1",
+        "a_h": "2",
+        "e_t": "3",
+        "i_t": "2",
+        "d_t": "2",
+        "a_t": "3",
+        "e_s": "0",
+        "i_s": "0",
+        "d_s": "0",
+        "a_s": "0",
+        "e_i": "0",
+        "i_i": "0",
+        "d_i": "0",
+        "a_i": "0",
+        "basal": 36
+      },
+      "publicOutput": {
+        "id": "pasi",
+        "main": [
+          "7,3",
+          "de 72"
+        ],
+        "label": "PASI",
+        "raw": {
+          "pasi": 7.3,
+          "melhora": 79.72222222222221
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pasi": 7.3,
+          "melhora": 79.72
+        }
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7,3",
+          "de 72"
+        ],
+        "label": "PASI",
+        "level": "low",
+        "verdict": "Psoríase leve pelo PASI (≤ 10)",
+        "rows": [
+          [
+            "Melhora em relação ao PASI basal",
+            "80% (PASI 75)"
+          ]
+        ],
+        "note": "Pela regra dos dez, BSA &gt; 10% ou impacto importante na qualidade de vida também caracterizam doença grave, mesmo com PASI ≤ 10.",
+        "raw": {
+          "pasi": 7.3,
+          "melhora": 79.72222222222221
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Limite: membros inferiores 3+3+2 com área 3 = 9,6; + membros superiores 1+0+1 área 1 = 0,4: PASI 10,0 (leve)",
+      "input": {
+        "e_i": "3",
+        "i_i": "3",
+        "d_i": "2",
+        "a_i": "3",
+        "e_s": "1",
+        "i_s": "0",
+        "d_s": "1",
+        "a_s": "1",
+        "e_h": "0",
+        "i_h": "0",
+        "d_h": "0",
+        "a_h": "0",
+        "e_t": "0",
+        "i_t": "0",
+        "d_t": "0",
+        "a_t": "0"
+      },
+      "publicOutput": {
+        "id": "pasi",
+        "main": [
+          "10,0",
+          "de 72"
+        ],
+        "label": "PASI",
+        "raw": {
+          "pasi": 10,
+          "melhora": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pasi": 10
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "10,0",
+          "de 72"
+        ],
+        "label": "PASI",
+        "level": "low",
+        "verdict": "Psoríase leve pelo PASI (≤ 10)",
+        "rows": [],
+        "note": "Pela regra dos dez, BSA &gt; 10% ou impacto importante na qualidade de vida também caracterizam doença grave, mesmo com PASI ≤ 10.",
+        "raw": {
+          "pasi": 10,
+          "melhora": null
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

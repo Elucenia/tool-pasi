@@ -229,3 +229,37 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Mild psoriasis by PASI (≤ 10)
+
+By the rule of tens, BSA > 10% or important impact on quality of life also characterize severe disease, even with PASI ≤ 10.
+
+
+### 2
+
+Moderate to severe psoriasis by the rule of tens (PASI > 10)
+
+
+### 3
+
+Mild psoriasis by PASI (≤ 10)
+
+| Result details | |
+| --- | --- |
+| Improvement from baseline PASI | 80% (PASI 75) |
+
+By the rule of tens, BSA > 10% or important impact on quality of life also characterize severe disease, even with PASI ≤ 10.
+
+
+### 4
+
+Mild psoriasis by PASI (≤ 10)
+
+By the rule of tens, BSA > 10% or important impact on quality of life also characterize severe disease, even with PASI ≤ 10.
+

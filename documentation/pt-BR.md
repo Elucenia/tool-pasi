@@ -229,3 +229,37 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Psoríase leve pelo PASI (≤ 10)
+
+Pela regra dos dez, BSA > 10% ou impacto importante na qualidade de vida também caracterizam doença grave, mesmo com PASI ≤ 10.
+
+
+### 2
+
+Psoríase moderada a grave pela regra dos dez (PASI > 10)
+
+
+### 3
+
+Psoríase leve pelo PASI (≤ 10)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Melhora em relação ao PASI basal | 80% (PASI 75) |
+
+Pela regra dos dez, BSA > 10% ou impacto importante na qualidade de vida também caracterizam doença grave, mesmo com PASI ≤ 10.
+
+
+### 4
+
+Psoríase leve pelo PASI (≤ 10)
+
+Pela regra dos dez, BSA > 10% ou impacto importante na qualidade de vida também caracterizam doença grave, mesmo com PASI ≤ 10.
+

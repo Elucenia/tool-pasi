@@ -229,3 +229,37 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Leichte Psoriasis nach PASI (≤ 10)
+
+Nach der Regel der Zehn charakterisieren auch BSA > 10 % oder eine erhebliche Beeinträchtigung der Lebensqualität eine schwere Erkrankung, selbst bei PASI ≤ 10.
+
+
+### 2
+
+Mittelgradige bis schwere Psoriasis nach der Regel der Zehn (PASI > 10)
+
+
+### 3
+
+Leichte Psoriasis nach PASI (≤ 10)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Verbesserung gegenüber dem Ausgangs-PASI | 80% (PASI 75) |
+
+Nach der Regel der Zehn charakterisieren auch BSA > 10 % oder eine erhebliche Beeinträchtigung der Lebensqualität eine schwere Erkrankung, selbst bei PASI ≤ 10.
+
+
+### 4
+
+Leichte Psoriasis nach PASI (≤ 10)
+
+Nach der Regel der Zehn charakterisieren auch BSA > 10 % oder eine erhebliche Beeinträchtigung der Lebensqualität eine schwere Erkrankung, selbst bei PASI ≤ 10.
+
